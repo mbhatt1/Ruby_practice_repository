@@ -1,6 +1,6 @@
 ActiveAdmin.register Page do
 
-	permit_params :title, :body, :order, :is_published, :section_id, :menu_display
+	permit_params :title, :body, :order, :is_published, :section_id, :menu_display, :featured
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
@@ -26,12 +26,13 @@ ActiveAdmin.register Page do
 
 	form do |f|
 		f.inputs 'Details' do
-			f.input :title, :lable => 'Title'
-			f.input :section, :lable => 'Section'
-			f.input :body, :lable => 'Body'
-			f.input :order, :lable => 'Order'
-			f.input :is_published, :lable => 'Published'
-			f.input :menu_display, :lable => 'Menu Display'
+			f.input :title, :label => 'Title'
+			f.input :section, :label => 'Section'
+			f.input :body, :label => "Body"
+			f.input :order, :label => 'Order'
+			f.input :is_published, :label => 'Published'
+			f.input :featured, :label => 'Featured'
+			f.input :menu_display, :label => 'Menu Display'
 			f.actions
 		end
 	end
