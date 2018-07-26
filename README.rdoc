@@ -1,5 +1,0 @@
-== README
-
-This is a simple content-management-system application built on Rails and active_admin that follows the steps in the "Learn Ruby on Rails By Building Projects" course via Udemy.
-
-www.charliemead.ninja
